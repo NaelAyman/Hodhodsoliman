@@ -1,0 +1,87 @@
+extends header.pug
+
+block topHeader
+
+    .col-md-6.col-12
+        ul.headRightLinks
+            li
+                a(href="") المعلمون
+            li
+                a(href="") المناهج
+                    
+    .col-md-6.col-12
+        .user-tools
+            .dropdown-click
+                span  العربية
+                    i.left-icon.fas.fa-chevron-down
+
+                .dropdown-content
+                    ul
+                        li
+                            a(href="") العربية
+                        li
+                            a(href="") English
+            .register-btns
+                a.site-btn.green(href="") إشتراك
+
+            ul.personalLinks
+                li.dropdown-click
+                    span  
+                        i.fas.fa-comments
+
+                    .dropdown-content
+                        ul
+                            li
+                                h3 المحادثات
+                            -for(var i = 0; i < 3; i++)
+                                li
+                                    .fav-block.comment
+                                        .fav-content
+                                            span
+                                            img(src="img/client-img.png")
+                                            .fav-txt
+                                                h3 يزيد الحسيني
+                                                    mark مدرس تاريخ
+                                                .fav-flag
+                                                    p بنحاضر يوم الأربعاء عن الدروس
+                                            .fav-icons
+                                                p 18/06/2019
+                li.dropdown-click
+                    span  
+                        i.fas.fa-heart
+
+                    .dropdown-content
+                        ul
+                            li
+                                h3 المُعلمون المفضلون
+                            -for(var i = 0; i < 3; i++)
+                                li
+                                    .fav-block
+                                        span متصل
+
+                                        .fav-content
+                                            a(href="", data-toggle="modal", data-target="#teacherDetails")
+                                                img(src="img/client-img.png")
+                                                .fav-txt
+                                                    h3 يزيد الحسيني
+                                                    .fav-flag
+                                                        img(src="img/flag.png")
+                                                        span مدرس تاريخ
+                                            .fav-icons
+                                                i.fas.fa-comment-dots
+                                                i.fas.fa-video
+
+
+
+                li.dropdown-click
+                    span  
+                        img(src="img/profImg.png")
+
+                    .dropdown-content.prof
+                        ul
+                            li
+                                a(href="") إعدادات الحساب
+                            li
+                                a(href="") جدول مواعيدي
+                            li
+                                a(href="") تسجيل خروج

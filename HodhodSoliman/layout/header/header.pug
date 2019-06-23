@@ -1,0 +1,56 @@
+// Start Loader
+
+.loading
+    .loader
+        img(src="img/logo.png")
+
+// End Loader
+
+// Start Top Header
+
+.overlay
+
+header 
+    .header.top-header 
+        .container
+            .row
+                block topHeader
+                    
+                    .col-12
+                        .user-tools.center
+                            .dropdown-click
+                                span  العربية
+                                    i.left-icon.fas.fa-chevron-down
+
+                                .dropdown-content
+                                    ul
+                                        li
+                                            a(href="") العربية
+                                        li
+                                            a(href="") English
+                            .register-btns
+                                a.site-btn(href="sign-up.html") تسجيل الدخول
+                                a.site-btn.purple(href="login.html") التسجيل
+    // End Top Header
+
+    // Start Navbar
+
+    .menu
+        .container
+            .menu-content
+                a.logo(href="index.html")
+                    img(src="img/logo.png")
+                .nav-links
+                    ul
+                        li: a(href="index.html") الرئيسية
+                        li: a(href="") الأخبار
+                        li: a(href="") من نحن
+                        li: a(href="") تواصل معنا
+                        li.hide: a(href="") المعلمون
+                        li.hide: a(href="") المناهج
+                .mob-collaps
+                    span
+                    span
+                    span
+
+    // End Navbar

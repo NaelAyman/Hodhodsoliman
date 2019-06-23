@@ -1,0 +1,117 @@
+// Start Footer
+
+footer
+    .footer
+        .container
+            .footer-content
+                ul.social
+                    li: a(href="")
+                        i.fab.fa-facebook-f
+                    li: a(href="")
+                        i.fab.fa-twitter
+                    li: a(href="")
+                        i.fab.fa-instagram
+                    li: a(href="")
+                        i.fab.fa-youtube
+
+                p.reserve جميع الحقوق محفوظة لـ @
+                    a(href="index.html")  هدهد سليمان
+
+// End Footer
+
+// Start Fixed Footer
+
+block fixedFooter
+    .fixed-footer
+        ul
+            li
+                a(href="index.html", class="active")
+                    i.fas.fa-home
+                    span الرئيسية
+            li
+                a(href="login.html")
+                    i.fas.fa-user
+                    span تسجيل الدخول
+            li
+                a(href="sign-up.html")
+                    i.fas.fa-user
+                    span التسجيل
+
+// End Fixed Footer
+
+// Start Modal Teacher Details
+
+.modal.fade#teacherDetails
+    .modal-dialog
+        .modal-content
+            .modal-body
+                .info-header
+                    .body-icons
+                        a(class="default heart")
+                            i.fas.fa-heart
+                        a(class="close default", data-dismiss="modal") &times;
+
+                    .teacherInfo
+                        img(src="img/client-img.png")
+                        .fav-txt
+                            h3 يزيد الحسيني
+                            .fav-flag
+                                img(src="img/flag.png")
+                                span مدرس تاريخ
+                            .rate
+                                -for(var i = 0;  i < 4; i++)
+                                    i.fas.fa-star.greenColor
+                                i.fas.fa-star
+                            .info-btn
+                                a.site-btn.purple(href="") رسائل
+                                a.site-btn.purple(href="") إتصال
+                
+                .info-tabs
+                    ul.nav.nav-pills
+                        li.nav-item
+                            a.nav-link.active(href="#profile", data-toggle="pill") الملف الشخصي 
+                        li.nav-item
+                            a.nav-link(href="#booking", data-toggle="pill") جدول الحجز
+                    
+                    .tab-content
+                        .tab-pane.active#profile
+                            .info-profile-txt
+                                .info-ex
+                                    h4 الشهادات الحاصل عليها
+                                    p ليسانس آداب وتربية قسم رياضيات - جامعة العربية
+                                    p ليسانس آداب وتربية قسم رياضيات - جامعة العربية
+                                .info-ex
+                                    h4 مراحل التدريس
+                                    .teach-types
+                                        span إبتدائية
+                                        span متوسطة
+                                        span ثانوية
+                                .info-ex
+                                    h4 الخبرة التعليمية
+                                    p أعوام بمدرسة عمر بن الخطاب المتوسطة
+                                    p أعوام بمدرسة عمر بن الخطاب المتوسطة
+                        .tab-pane.fade#booking
+                            #datepicker
+
+                            .day-details
+                                .back
+                                    i.fas.fa-arrow-right
+                                h3 المواعيد المتاحة من المعلم
+
+                                .day-details-date
+                                    .book
+                                        p 12:30م الي 1:30 م
+                                            span.error تم حجز الميعاد وإضافته في جدولك
+                                        a.site-btn.green(href="") إلغاء الحجز
+                                    .book
+                                        p 12:30م الي 1:30 م
+                                        a.site-btn.green(href="") تم الحجز
+
+// End Modal Teacher Details
+
+script(src="js/jquery-3.2.1.min.js")
+script(src="js/popper.min.js")
+script(src="js/bootstrap.min.js")
+script(src="js/jquery-ui.js")
+script(src="js/owl.carousel.min.js")
+script(src="js/scripts.js")
